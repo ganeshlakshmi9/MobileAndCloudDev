@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+/home/kristiansejersen/MobileAndCloudDev/.metadata/.plugins/org.eclipse.jdt.core
-2380807551.index
-2312596973.index
