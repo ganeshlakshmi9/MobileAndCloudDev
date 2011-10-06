@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textViewLabelProfile" android:text="@string/profilelbl" android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+    <EditText android:id="@+id/editTextProfile" android:layout_height="wrap_content" android:layout_x="113dp" android:layout_y="26dp" android:layout_width="fill_parent" android:layout_below="@id/textViewLabelProfile">
+        <requestFocus></requestFocus>
+    </EditText>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/edit_profile_button" android:text="@string/saveprofile" android:layout_below="@+id/editTextProfile" android:layout_alignParentLeft="true" android:layout_marginLeft="14dp"></Button>
+</RelativeLayout>

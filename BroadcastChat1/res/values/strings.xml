@@ -15,8 +15,30 @@
 -->
 
 <resources>
-    <string name="app_name">1.Broadcast Chat</string>
-
+    <string name="app_name">Broadcast Chat</string>
+    <string name="create_btn">Create</string>
+    
     <!--  BroadcastChat -->
     <string name="send">Send</string>
+    
+    <!--  Create Room Strings -->
+    <string name="room_name_lbl">Chat room name: </string>
+    
+    <!--  Dashboard Strings -->
+    <string name="title">Broadcast Chat</string>
+    <string name="author">Kristian H. Sejersen</string>
+    <string name="createbenny"> Room</string>
+    
+    <string name="globalbtn">Global Chat</string>
+    <string name="profilebtn">Profile</string>
+    <string name="createroombtn">Create Room</string>
+    <string name="roomsbtn">Rooms</string>
+    
+    <!--  Profile Strings -->
+    <string name="profilelbl">Profile name: </string>
+    <string name="saveprofile">Save</string>
+    
+    <!--  Rooms List -->
+    <string name="contextmenu_delete_room">Delete Room</string>
+    
 </resources>

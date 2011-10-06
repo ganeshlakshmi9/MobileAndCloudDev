@@ -11,21 +11,63 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
+        public static final int explorer=0x7f020000;
+        public static final int floppy=0x7f020001;
+        public static final int globe=0x7f020002;
+        public static final int icon=0x7f020003;
+        public static final int notepad=0x7f020004;
     }
     public static final class id {
-        public static final int button_send=0x7f050002;
-        public static final int edit_text_out=0x7f050001;
-        public static final int in=0x7f050000;
+        public static final int button_send=0x7f05000c;
+        public static final int createRoomBtn=0x7f050002;
+        public static final int create_room_editText=0x7f050001;
+        public static final int dashboardLayout1=0x7f050004;
+        public static final int editTextProfile=0x7f05000e;
+        public static final int edit_profile_button=0x7f05000f;
+        public static final int edit_text_out=0x7f05000b;
+        public static final int imageButtonCreateRoom=0x7f050007;
+        public static final int imageButtonGlobal=0x7f050006;
+        public static final int imageButtonProfile=0x7f050005;
+        public static final int imageButtonRooms=0x7f050008;
+        public static final int in=0x7f05000a;
+        public static final int room_textView=0x7f050000;
+        public static final int textViewAuthor=0x7f050009;
+        public static final int textViewLabelProfile=0x7f05000d;
+        public static final int textViewTitle=0x7f050003;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
-        public static final int message=0x7f030001;
+        public static final int createroom=0x7f030000;
+        public static final int dashboard=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int message=0x7f030003;
+        public static final int profile_edit=0x7f030004;
+        public static final int room_list=0x7f030005;
+        public static final int rooms_row=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
+        public static final int author=0x7f040005;
+        /**   Rooms List 
+         */
+        public static final int contextmenu_delete_room=0x7f04000d;
+        public static final int create_btn=0x7f040001;
+        public static final int createbenny=0x7f040006;
+        public static final int createroombtn=0x7f040009;
+        public static final int globalbtn=0x7f040007;
+        public static final int profilebtn=0x7f040008;
+        /**   Profile Strings 
+         */
+        public static final int profilelbl=0x7f04000b;
+        /**   Create Room Strings 
+         */
+        public static final int room_name_lbl=0x7f040003;
+        public static final int roomsbtn=0x7f04000a;
+        public static final int saveprofile=0x7f04000c;
         /**   BroadcastChat 
          */
-        public static final int send=0x7f040001;
+        public static final int send=0x7f040002;
+        /**   Dashboard Strings 
+         */
+        public static final int title=0x7f040004;
     }
 }

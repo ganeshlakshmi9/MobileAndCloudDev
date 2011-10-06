@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:weightSum="1">
+  
+    <TextView android:id="@+id/textViewTitle" android:text="@string/app_name" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="#0000A0"/>
+    
+    <ncsu.course.android.broadcastchat1.gui.DashboardLayout android:layout_height="fill_parent" android:id="@+id/dashboardLayout1" android:layout_width="fill_parent" android:layout_weight="0.99" android:background="#FFFFFF">
+    	
+    	<Button android:id="@+id/imageButtonProfile" android:drawableTop="@drawable/floppy" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		 android:text="@string/profilebtn" 
+		 android:onClick="OnClick" />
+    
+    	<Button android:id="@+id/imageButtonGlobal" android:drawableTop="@drawable/globe" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		 android:text="@string/globalbtn" 
+		 android:onClick="OnClick" />
+		 
+		 <Button android:id="@+id/imageButtonCreateRoom" android:drawableTop="@drawable/notepad" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		 android:text="@string/createroombtn" 
+		 android:onClick="OnClick" />
+    	
+    	
+    	<Button android:id="@+id/imageButtonRooms" android:drawableTop="@drawable/explorer" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		 android:text="@string/roomsbtn" 
+		 android:onClick="OnClick" />
+    
+    </ncsu.course.android.broadcastchat1.gui.DashboardLayout>
+    
+    <TextView android:id="@+id/textViewAuthor" android:text="@string/author" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="#0000A0"/>
+</LinearLayout>

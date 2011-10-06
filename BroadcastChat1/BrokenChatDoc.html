@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 3.3  (Unix)">
+	<META NAME="AUTHOR" CONTENT="Kristian Sejersen">
+	<META NAME="CREATED" CONTENT="20111005;22330500">
+	<META NAME="CHANGEDBY" CONTENT="Kristian Sejersen">
+	<META NAME="CHANGED" CONTENT="20111005;23345900">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 0.79in }
+		P { margin-bottom: 0.08in }
+		H2 { margin-bottom: 0.08in }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "Droid Sans Fallback"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "Lohit Hindi"; font-size: 14pt; font-style: italic }
+		H1 { margin-bottom: 0.08in }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "Droid Sans Fallback"; font-size: 16pt }
+		H1.ctl { font-family: "Lohit Hindi"; font-size: 16pt }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en" DIR="LTR">
+<H1 CLASS="western">BrokenChat documentation</H1>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<H2 CLASS="western">Funktionalitet:</H2>
+<P STYLE="margin-bottom: 0in"><FONT SIZE=3>Havde applikationen virket
+som forventet ville det være muligt for brugeren at:</FONT></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0in">Ændre brugernavn. 
+	</P>
+	<LI><P STYLE="margin-bottom: 0in">Oprette et nyt chat rum.</P>
+	<LI><P STYLE="margin-bottom: 0in">Se en liste over chat rum.</P>
+	<LI><P STYLE="margin-bottom: 0in">Deltage i et chat rum efter eget
+	valg.</P>
+	<LI><P STYLE="margin-bottom: 0in">Slette chat rum.</P>
+	<LI><P STYLE="margin-bottom: 0in">Deltage i den globale chat.</P>
+	<LI><P STYLE="margin-bottom: 0in">Modtage beskeder via en service
+	således at dette også fungerer når aktiviteterne er på pause.</P>
+</OL>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Desværre lykkedes det mig ikke at
+konvertere chat servicen til en fungerende Android service. Jeg vil
+derfor koncentrere mig om at beskrive applikationen som den er
+tiltænkt og uddybe hvor vidt de virker eller ej. 
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in">Det er muligt i den pågældende
+løsning at ændre brugernavnet. Dette foregår fra dashboard menuen
+hvor profile vælges og indstillingerne kan ændres.</P>
+<P STYLE="margin-bottom: 0in">	Oprettelse af chat rum gøres også
+via dashboardet. Her bliver brugeren ledt videre til en activitet for
+der efter input kan oprettes et rum og brugeren føres derefter
+automatisk videre til listen over chatrum. Desværre fungerer dette
+feature ikke helt optimalt da der efter 2. indsættelse sker en sql
+fejl. Det lader til at database objektet ikke lukkes korrekt. 
+</P>
+<P STYLE="margin-bottom: 0in">	Listen over chat rum tilgås fra
+dasboardet, men loader desværre ikke data korrekt. Sletning af et
+rum ville foregå ved en context menu. Tilgangen til et rum ville
+kunne opnås ved et normalt tryk, hvorefter en chat activity startes.</P>
+<P STYLE="margin-bottom: 0in">	Da chat servicen ikke virker er det
+ikke muligt på nuværende tidspunkt at tilgå en global chat. Denne
+ville ellers kunne tilgås fra dashboard.</P>
+<P STYLE="margin-bottom: 0in">	Da servicen ikke blev implementeret
+korrekt er det desværre ikke muligt at modtage beskeder når
+applikationen er på pause. 
+</P>
+<P STYLE="margin-bottom: 0in">		</P>
+<H2 CLASS="western">User Interface:</H2>
+<P>Brugergrænsefladen er designet med Googles Dashboard design
+mønster. Dashboardet fungerer som en central activity for brugeren,
+der har mulighed for at vælge de mere gængse muligheder som at
+ændret brugernavnet, oprette et nyt chat rum der efterfølgende
+leder brugeren videre til chat rummet, se en liste over tilgængelige
+chat rum og til sidst hurtigt deltage i den globale chat. 
+</P>
+<P>Da projektet ikke er færdigt at dette desværre det eneste
+implementerede mønster. Andre mønstre der kunne være interessante
+for applikationen ville være en Activity Bar eller en Companion
+Widget. For Activity Barens vedkommende ville der være implementeret
+genveje til dashboard, profilnavn og en oversigt over tilgængelige
+rum.</P>
+<H2 CLASS="western">Design Strategy:</H2>
+<P>Applikationen er udfærdiget efter Googles UI patterns for at
+skabe et bedst muligt overblik for brugeren. Der er ikke direkte
+tilstræbt nogen udviklingsmetode for dette projekt. 
+</P>
+<H2 CLASS="western">Installation Guidance:</H2>
+<P>Unzip og importer som eksisterende projekt eller importer direkte
+som archive file. Programmet kan enten køres via emulator eller
+installeres ved at tilslutte en android enhed der er opsat til
+debugging  og køre programmet via debug i Eclipse. 
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+</BODY>
+</HTML>

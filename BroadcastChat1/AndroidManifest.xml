@@ -4,22 +4,39 @@
       android:versionCode="1"
       android:versionName="1.0">
       
-      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-  
     <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
-        <activity android:name=".BroadcastChat"
-                  android:label="@string/app_name"
-                  android:configChanges="orientation|keyboardHidden">
-            <intent-filter>
+    
+        <activity android:name=".activities.BroadcastDashboard" android:label="@string/app_name">
+        	<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        
+        <activity android:name=".activities.BroadcastChat"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation|keyboardHidden">
+        </activity>
+        
+        <activity android:name=".activities.BroadcastProfile" 
+        		  android:label="@string/app_name">
+        </activity>
+        
+        <activity android:name=".activities.BroadcastRooms" 
+                  android:label="@string/app_name">
+        		  
+        </activity>
+        
+        <activity android:name=".activities.BroadcastCreateRoom"
+        	      android:label="@string/app_name">
+        </activity>
+        
+        
+        <service android:name=".services.BroadcastChatService" android:enabled="true">
+        </service>
     </application>
 
-
-
-<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 </manifest> 
