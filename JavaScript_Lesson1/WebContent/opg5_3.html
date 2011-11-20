@@ -2,9 +2,48 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Opg. 5.3</title>
 </head>
 <body>
-
+<script type="text/javascript">
+	sum = 0;
+	function updateTotalCost(){
+		sum = 0;
+		var apple = document.getElementById("apple");
+		var orange = document.getElementById("orange");
+		var banana = document.getElementById("banana");
+		
+		if(apple.checked){
+			sum+=59;
+		}
+		if(orange.checked){
+			sum+=49;
+		}
+		if(banana.checked){
+			sum+=39;
+		}
+		document.getElementById("sum").innerHTML = sum;
+	}
+	
+	function sumshow() {
+       alert("Total: " + sum);
+    }
+</script>
+	<table>
+		<tr>
+			<td><span>Apple(59 cents): </span></td>
+			<td><input type="checkbox" id="apple" onclick="updateTotalCost()" /></td>
+		</tr>
+		<tr>
+			<td><span>Orange(49 cents): </span></td>
+			<td><input type="checkbox" id="orange" onclick="updateTotalCost()" /></td>
+		</tr>
+		<tr>
+			<td><span>Banana(39 cents): </span></td>
+			<td><input type="checkbox" id="banana" onclick="updateTotalCost()" /></td>
+		</tr>
+	</table>
+	<button onclick="sumshow()">Submit</button>
+	<label id="sum">Result: 0</label>
 </body>
 </html>
