@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Opg. 4.6</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var input = prompt("Please enter a sequence:", "");
+document.write("<b>Input:<b/>" + input + "<br/>");
+
+var words = input.split(" ");
+
+words.sort(function(a,b){return a - b;});
+
+document.write("<b>Output:<b/> ");
+for(var i = 0; i<words.length; i++){
+	document.write(words[i] + " ");
+}
+
+</script>
+</body>
+</html>

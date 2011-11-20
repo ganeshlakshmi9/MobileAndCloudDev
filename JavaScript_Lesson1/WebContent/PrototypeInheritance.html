@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Prototype Inheritance</title>
+</head>
+<body>
+<h2>Prototype Inheritance</h2>
+<script type="text/javascript">
+
+function Person(){
+	this.name = "Hans";
+	this.show = function(){alert(this.name)};
+	this.gender = "male";
+}
+
+Person.prototype.test = function(){alert("Hej")}
+
+function Student(){
+	this.gradeAvg = "A";
+	this.year = "2011";
+}
+	
+Student.prototype = new Person;
+
+function Teacher(){
+	this.name = "Lars"
+	this.salery = 2500;
+	this.yearOfEmployment = "2003";
+}
+
+Teacher.prototype = new Person;
+
+var person 	= new Person();
+var student = new Student();
+var teacher	= new Teacher();
+
+document.write("Person name: "+person.name + "<br/>");
+document.write("Student name:" + student.name + "<br/>");
+document.write("Student year:" + student.year + "<br/>");
+document.write("Teacher salery:" + teacher.salery + "<br/>");
+document.write("Teacher gender:" + teacher.gender + "<br/>");
+
+person.show();
+student.show();
+teacher.show();
+
+</script>
+</body>
+</html>
