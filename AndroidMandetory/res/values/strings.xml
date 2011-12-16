@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shopping List App</string>
+	<string name="no_items">There are no items added to your list</string>
+	<string name="photo_description">Item Photo</string>
+	<string name="autocomplete">Auto complete</string>
+</resources>
