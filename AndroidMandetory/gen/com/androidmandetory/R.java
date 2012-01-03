@@ -14,22 +14,64 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int autoCompleteTextView1=0x7f050001;
-        public static final int editText2=0x7f050002;
-        public static final int editText3=0x7f050000;
-        public static final int imageView1=0x7f050003;
-        public static final int item_checkbox=0x7f050005;
-        public static final int text_ItemName=0x7f050004;
+        public static final int action_bar=0x01010000;
+        public static final int actionbar_currency=0x01010003;
+        public static final int actionbar_new=0x01010002;
+        public static final int add_button=0x7f060006;
+        public static final int app_title=0x01010001;
+        public static final int context_menu_delete=0x7f06000e;
+        public static final int context_menu_edit=0x7f06000d;
+        public static final int editText_name=0x7f060001;
+        public static final int editText_price=0x7f060005;
+        public static final int editText_quantity=0x7f060003;
+        public static final int footer_cost_text=0x01010004;
+        public static final int list_item_checkbox=0x7f06000c;
+        public static final int list_item_itemImage=0x7f060007;
+        public static final int list_item_textView_name=0x7f060008;
+        public static final int list_item_textView_price=0x7f06000a;
+        public static final int list_item_textView_quantity=0x7f060009;
+        public static final int list_item_textView_total_price=0x7f06000b;
+        public static final int menu_clear_checked=0x7f060010;
+        public static final int menu_currency=0x7f060011;
+        public static final int menu_insert_item=0x7f06000f;
+        public static final int textView_name=0x7f060000;
+        public static final int textView_price=0x7f060004;
+        public static final int textView_quantity=0x7f060002;
     }
     public static final class layout {
-        public static final int edit_layout=0x7f030000;
-        public static final int item_row=0x7f030001;
-        public static final int items_list=0x7f030002;
+        public static final int edit_item_layout=0x7f030000;
+        public static final int item_row_layout=0x7f030001;
+        public static final int shopping_list_layout=0x7f030002;
+    }
+    public static final class menu {
+        public static final int context_menu_layout=0x7f050000;
+        public static final int menu_layout=0x7f050001;
     }
     public static final class string {
+        public static final int actionbar_currency=0x7f04000f;
+        public static final int actionbar_new=0x7f04000e;
         public static final int app_name=0x7f040000;
-        public static final int autocomplete=0x7f040003;
-        public static final int no_items=0x7f040001;
-        public static final int photo_description=0x7f040002;
+        public static final int autocomplete=0x7f040002;
+        public static final int context_menu_delete=0x7f040008;
+        public static final int context_menu_edit=0x7f040007;
+        public static final int context_menu_title=0x7f040006;
+        public static final int currency_dkk=0x7f040016;
+        public static final int currency_eur=0x7f040014;
+        public static final int currency_gbp=0x7f040018;
+        public static final int currency_label_dkk=0x7f040015;
+        public static final int currency_label_eur=0x7f040013;
+        public static final int currency_label_gbp=0x7f040017;
+        public static final int currency_label_usd=0x7f040011;
+        public static final int currency_usd=0x7f040012;
+        public static final int edit_button_save=0x7f04000c;
+        public static final int edit_textview_name=0x7f040009;
+        public static final int edit_textview_price=0x7f04000a;
+        public static final int edit_textview_quantity=0x7f04000b;
+        public static final int edit_title=0x7f04000d;
+        public static final int footer_total_cost=0x7f040010;
+        public static final int menu_clear_checked=0x7f040005;
+        public static final int menu_currency=0x7f040004;
+        public static final int menu_insert=0x7f040003;
+        public static final int photo_description=0x7f040001;
     }
 }
